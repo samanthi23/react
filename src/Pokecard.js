@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 
 class Pokecard extends Component {
     render() {
-        return <h1> POKECARD! </h1>;
+        return (
+        
+        <div className="Pokecard">
+            <h1>
+                {this.props.name}
+            </h1>
+            
+        </div>
+        
+        )
     }
 }
 
