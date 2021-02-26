@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // import Pokecard from './Pokecard';
 import './App.css';
-import Pokedex from './Pokedex';
+//import Pokedex from './Pokedex';
+import Pokegame from './Pokegame';
 
 /*<Pokecard 
         id={4}
@@ -16,8 +17,8 @@ class App extends Component {
   render() {
     return (
     <div className="App" >
-    <Pokedex />
-     
+   {/*  <Pokedex />  instead return an single Pokegame*/}
+     <Pokegame />
     
     </div>
     );
