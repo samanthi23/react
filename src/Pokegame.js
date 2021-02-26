@@ -1,4 +1,5 @@
-import REact, { Component } from 'react';
+import React, { Component } from 'react';
+
 
 class Pokegame extends Component {
     // default props
@@ -33,11 +34,11 @@ class Pokegame extends Component {
             
         }
         
-        console.log(hand1);
-        console.log(hand2);
+        {/*console.log(hand1);
+        console.log(hand2); */}
         return (
             <div>
-                <h1>Pokegame </h1>
+                <Pokedex />
             </div>
         )
     }

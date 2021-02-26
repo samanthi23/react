@@ -15,3 +15,6 @@ comment is ``` {/* comment code here */}```
 
 instead return a single Pokegame
 ``` <Pokegame /> ```
+
+then take those and turn them into Pokedex's that will then render cards
+
