@@ -18,3 +18,8 @@ instead return a single Pokegame
 
 then take those and turn them into Pokedex's that will then render cards
 
+## should now see two card decks being displayed
+```
+<Pokedex pokemon={hand1} />
+<Pokedex pokemon={hand2} />
+```
