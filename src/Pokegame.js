@@ -36,10 +36,15 @@ class Pokegame extends Component {
         
         {/*console.log(hand1);
         console.log(hand2); */}
+        
+        {/* experienc, base_experience add each experience together, also start it at 0, go through everything in hand1 and sum everything together starting base_experience and exp*/}
+        let exp1 = hand1.reduce((exp, pokemon) => exp + pokemon.base_experience, 0); 
+        let exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0); 
+       
         return (
             <div>
-                <Pokedex pokemon={hand1} />
-                <Pokedex pokemon={hand2} />
+                <Pokedex pokemon={hand1} exp={exp1} isWinner={exp1 > exp2} />
+                <Pokedex pokemon={hand2} exp={exp2} isWinner={exp2 > exp1} />
             </div>
         )
     }
