@@ -70,4 +70,66 @@ must set initial state in REACT
 )
 
 
+
+# Babel
+
+on ```this``` it adds a new property "age" and sets it to 21
+
+``` 
+class Hello {
+    age = 21;
+    }
+    
 ```
+
+or if you set state = {age: 21} to an object
+it sets ```this```
+
+
+``` 
+constructor(...args) {
+    super(...args);
+    
+    __defineProperty(this, "state", {
+        score: 99, 
+        gameOver: false 
+        });
+        }
+        ```
+    })
+}
+```
+
+## ..args is props
+
+super(props)
+
+defining something on an instance of a component
+
+error: says must call super constructor in derived class before accessing 'this' 
+
+super calls Component constructor()
+
+after calling super: shows us that we are running the code in the Component constructor and the Game constructor
+
+<Demo animal="bobcat" food="Pineapple" />
+
+### ="" are the props
+
+almost as if: ``` new Demo({animal: "Bobcat"})```
+
+# console.log(this.props)
+
+
+```console.log(this.props)```
+
+if you want access to ```this.props``` must pass in props to super, ```super(props)```
+
+```
+render() {
+    return <h1> {this.props.animal}</h1>;
+    }
+```
+
+only if you need props inside the constructor do you need super(props) to pass in props
+
