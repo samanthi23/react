@@ -133,3 +133,29 @@ render() {
 
 only if you need props inside the constructor do you need super(props) to pass in props
 
+
+## there is no this if I'm not calling the super() constructor
+
+changing state
+
+never directly manipulate the state
+
+use ``` this.setState() ``` instead
+
+```
+this.setState({ playerName: "Matt", score: 0})
+```
+
+pass in an Object
+
+do not call this.setState() in the constructor
+
+initialize state in the constructor but don't call this.setState in constructor
+
+asynchronously 
+
+components re-render when you change their state changes
+
+1. read setState docs
+
+
