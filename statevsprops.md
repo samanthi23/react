@@ -20,11 +20,24 @@ class CounterParent extends Component {
  render () {
   return (
     <div> 
-      <CounterChid count = {this.state.count } />
+      <CounterChild count = {this.state.count } />
     </div>
    );
   }
  }
 
 ```
+
+parent component that manages state
+
+and it passes it's state down to the child component as props
+
+downward data flow
+
+# to do
+
+1. StateClicker 49.
+
+
+
 
